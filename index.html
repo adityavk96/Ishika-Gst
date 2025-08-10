@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST | home</title>
+    
+     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-black text-white">
+
+    <!-- The canvas for the stars. It is placed before the main content to be visually behind it. -->
+    <canvas id="star-canvas"></canvas>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="frontend/assets/images/Emblem_of_India-white.svg" alt="" class="logo">
+            <span class="site-title">GST</span>
+            <a href="frontend/login.html" class="login-btn">Login</a>  
+            <button class="hamburger" id="hamburger" aria-label="menu">☰</button>
+        </div>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="frontend/home.html" class="nav-link">Home</a></li>
+                    <li><a href="frontend/services.html" class="nav-link">Services</a></li>
+                    <li><a href="frontend/download.html" class="nav-link">Downloads</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form-container w-11/12 md:w-96 p-4">
+        <div id="message-box" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl text-center max-w-sm mx-auto">
+                <p id="message-text" class="text-lg mb-4"></p>
+                <button id="close-message" class="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600">OK</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
